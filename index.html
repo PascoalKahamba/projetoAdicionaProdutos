@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pascoal Kahamba | POO</title>
+    <link rel="stylesheet" href="estilos.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Pascoal Kahamba Venda de Telefone e Acessorios,Lda</h1>
+    </header>
+    <main>
+      <div class="title">
+        <h2>Produtos</h2>
+        <span>Lista de prdutos da minha loja</span>
+      </div>
+
+      <div class="card">
+        <div class="lineinput">
+          <label for="produto">Produto</label>
+          <input type="text" id="produto" placeholder="nome produto" />
+        </div>
+
+        <div class="lineinput">
+          <label for="valor">Valor</label>
+          <input type="number" id="preco" placeholder="valor produto" />
+        </div>
+        <button onclick="produto.salvar()" id="atualizar">Salvar</button>
+        <button onclick="produto.cancelar()">Cancelar</button>
+      </div>
+      <div class="content">
+        <table>
+          <thead>
+            <th class="center">ID</th>
+            <th>Produto</th>
+            <th>Valor</th>
+            <th class="center">ações</th>
+          </thead>
+          <tbody class="tbody"></tbody>
+        </table>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
